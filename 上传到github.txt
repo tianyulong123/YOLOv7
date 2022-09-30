@@ -1,0 +1,25 @@
+# 这个目录变成Git可以管理的仓库
+git init
+
+# 如果是第一次提交的话，要先配置好你在git上的用户名和邮箱，输入命令
+git config --global user.email"1411566463@qq.com" 
+git config --global user.name"tianyulong123" 
+
+# 添加文件到Git仓库，分两步：
+# 1.使用命令git add ，注意，可反复多次使用，添加多个文件；
+# 2.使用命令git commit -m ，完成。
+git add . 
+git commit -m "first commit"
+
+# 将本地的仓库关联到github上并且配置key
+ssh-keygen -t rsa -C "1411566463@qq.com"
+
+# 找到自己的仓库地址，然后可以连接了！
+git remote add origin https://github.com/tianyulong123/YOLOv7.git
+
+# 代码上传到GitHub仓库
+git push -u origin master
+
+# 仓库为非空时，去掉-u
+git push origin master
+
