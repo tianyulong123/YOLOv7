@@ -23,3 +23,7 @@ git push -u origin master
 # 仓库为非空时，去掉-u
 git push origin master
 
+# 上传文件夹
+git push
+
+
